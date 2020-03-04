@@ -1,38 +1,49 @@
+//Addition function 
 function add(a,b)
 {
 console.log(`sum of ${a},${b} is ${a+b}`);
 }
+//subtraction function
 function sub(a,b)
 {
 
 console.log(`sub of ${a},${b} is ${a-b}`);
 }
+//multiplication function
 function multiply(a,b)
 {
 console.log(`mul of ${a},${b} is ${a*b}`);
 }
+//division function
 function division(a,b)
 {
 console.log(`div of ${a},${b} is ${a/b}`);
 }
+//modulo function
 function modulo(a,b)
 {
 console.log(`modulo of of ${a},${b} is ${a%b}`);
 }
+//powerof function
 function power(a,b)
 {
 console.log(`power of of ${a},${b} is ${a**b}`);
 }
+//comparing two numbers 
 function cmpnum(a,b)
 {
   console.log(`Result of comparison is ${a===b}`)
 }
+//comparing two strings
 function cmpstr(a,b)
 {
   console.log(`Result of comparison is ${a===b}`)
+  let c=(a===b?true:false);
+  console.log(c);
 }
+//comparing the type of two arguements
 function cmpval(a,b)
-{
+{ 
   if(typeof(a)=== typeof(b))
   {
   console.log(`Result of comparison is ${a===b}`);
@@ -41,7 +52,9 @@ function cmpval(a,b)
   {
     console.log(`Type mismatch`)
   }
+  //console.log(`${typeof(a)===typeof(b)}`);
 }
+//Function to find the grade according to marks
 function gradefinder(a)
 {
   if(a>=90)
@@ -68,6 +81,7 @@ function gradefinder(a)
     console.log(`Fail`);
   }
 }
+//function to find whether the given input is a vowel or not
 function vowels(a)
 {
   switch(a)
@@ -91,6 +105,21 @@ function vowels(a)
     console.log(`The given alphabet is not a vowel`)
   }
 }
+//function to find whether the given input is a vowel or not
+function vowels1(a)
+{
+  var str = "a e i o u A E I O U";
+  var n = str.includes(a);
+  if (n===true)
+  {
+   console.log(`The given alphabet is a vowel`);
+  }
+  else
+  {
+    console.log(`The given alphabet is not a vowel`);
+  }
+}
+//function to find whether the given input is prime or not
 function prime(a)
 {
   let i,flag=true;
@@ -128,4 +157,5 @@ cmpstr('m','m');
 cmpval(5,'5');
 gradefinder(90);
 vowels('A');
+vowels1('A');
 prime(20);
