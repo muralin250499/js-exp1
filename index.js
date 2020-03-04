@@ -14,7 +14,7 @@ function multiply(a,b)
 {
 console.log(`mul of ${a},${b} is ${a*b}`);
 }
-//division function
+//division function 
 function division(a,b)
 {
 console.log(`div of ${a},${b} is ${a/b}`);
